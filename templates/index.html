@@ -1,0 +1,492 @@
+
+{% extends 'layout.html' %} 
+{% block title %} {{title}} {% endblock title %} 
+{% block body %}
+
+
+<body style="background-color: rgb(6, 6, 55);">
+    <section class="section-about"data-lazy-load="true" id="section-about">
+	
+			
+  <!-- <div class="arrow left" id="left-arrow">&#8592;</div>
+  <div class="arrow right" id="right-arrow">&#8594;</div> -->
+
+  <center>
+	 <div class="arrow left" id="left-arrow">
+	<span class="span"></span>
+	<span class="span"></span>
+	<span class="span"></span>
+</div>
+</center>
+<center>
+<div class="arrow right" id="right-arrow">
+	<span class="span"></span>
+	<span class="span"></span>
+	<span class="span"></span>
+</div>
+</center>
+
+
+
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+              Thrilling bets, uncertain outcomes
+            </h2>
+        </div>
+
+        <div class="row-query">
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary u-margin-bottom-small">Experience thrills, embrace chance</h3>
+                <p class="paragraph">
+                  Acknowledges that gambling involves uncertainty and taking chances. Winning isn't guaranteed, and the risk is part of the allure for many.
+                </p>
+
+                <h3 class="heading-tertiary u-margin-bottom-small">Take a chance and see where fate takes you.</h3>
+                <p class="paragraph">
+                  This line captures the essence of gambling by emphasizing the excitement and uncertainty that comes with taking risks.
+                </p>
+
+               <div class="index-inline-result"> 
+                <a href="#" class="btn-outline">Learn more &rarr;</a>
+
+
+                <a href="#" class="btn-outline" id="myDiv">💥
+
+
+                {% if now >= start_time['slot1'] and now <= end_time['slot1'] %}
+                {% if daily_data.slot_1_1 %} {{daily_data.slot_1_3}}-{{daily_data.slot_1_1}} {% else %}Loading..{% endif %}
+              {% elif now >= start_time['slot2'] and now <= end_time['slot2'] %}
+                {% if daily_data.slot_2_1 %} {{daily_data.slot_2_3}}-{{daily_data.slot_2_1}} {% else %}Loading..{% endif %}
+              {% elif now >= start_time['slot3'] and now <= end_time['slot3'] %}
+                {% if daily_data.slot_3_1 %} {{daily_data.slot_3_3}}-{{daily_data.slot_3_1}} {% else %}Loading..{% endif %}
+              {% elif now >= start_time['slot4'] and now <= end_time['slot4'] %}
+                {% if daily_data.slot_4_1 %} {{daily_data.slot_4_3}}-{{daily_data.slot_4_1}} {% else %}Loading..{% endif %}
+              {% elif now >= start_time['slot5'] and now <= end_time['slot5'] %}
+                {% if daily_data.slot_5_1 %} {{daily_data.slot_5_3}}-{{daily_data.slot_5_1}} {% else %}Loading..{% endif %}
+              {% elif now >= start_time['slot6'] and now <= end_time['slot6'] %}
+                {% if daily_data.slot_6_1 %} {{daily_data.slot_6_3}}-{{daily_data.slot_6_1}} {% else %}Loading..{% endif %}
+              {% elif now >= start_time['slot7'] and now <= end_time['slot7'] %}
+                {% if daily_data.slot_7_1 %} {{daily_data.slot_7_3}}-{{daily_data.slot_7_1}} {% else %}Loading..{% endif %}
+              {% elif now >= start_time['slot8'] and now <= end_time['slot8'] %}
+                {% if daily_data.slot_8_1 %} {{daily_data.slot_8_3}}-{{daily_data.slot_8_1}} {% else %}Loading..{% endif %}
+              {% elif now >= start_time['slot9'] and now <= end_time['slot9'] %}
+                {% if daily_data.slot_9_1 %} {{daily_data.slot_9_3}}-{{daily_data.slot_9_1}} {% else %}Loading..{% endif %}
+              {% elif now >= start_time['slot10'] and now <= end_time['slot10'] %}
+                {% if daily_data.slot_10_1 %} {{daily_data.slot_10_3}}-{{daily_data.slot_10_1}} {% else %}Loading..{% endif %}
+              {% endif %}
+                    
+                    💥</a>
+                    <script>
+                      function checkTimeAndShowDiv() {
+                        const now = new Date();
+                        const scheduledStartHour = 10; // 10 AM in 24-hour format
+                        const scheduledEndHour = 17; // 7 PM in 24-hour format
+                        const scheduledEndMinute = 30; // 7:30 PM
+                    
+                        // Check if the current time is within the scheduled hours
+                        if (
+                          (now.getHours() === scheduledStartHour && now.getMinutes() >= 0) || 
+                          (now.getHours() > scheduledStartHour && now.getHours() < scheduledEndHour) || 
+                          (now.getHours() === scheduledEndHour && now.getMinutes() < scheduledEndMinute)
+                        ) {
+                          document.getElementById('myDiv').style.display = 'block';
+                        } else {
+                          document.getElementById('myDiv').style.display = 'none';
+                        }
+                      }
+                    
+                      // Check the time every minute
+                      setInterval(checkTimeAndShowDiv, 60000);
+                      // Initial check
+                      checkTimeAndShowDiv();
+                    </script>
+
+              </div>
+
+            </div>
+
+
+    
+
+
+
+
+
+<!-- jfjytjgk -->
+
+
+
+
+
+
+
+<!-- uiououolu -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col-1-of-2">
+                <div class="composition">
+                    <img
+                      src="https://hopetrustindia.com/wp-content/uploads/2024/10/Bet-on-Yourself.jpg"
+                      alt="Photo 1"    class="composition__photo composition__photo--p1"  
+                     
+                    />
+                    <img
+                      src="https://www.gamblingsites.org/app/uploads/2019/09/13-casino-gambling-strategies-1.jpg"
+                      alt="Photo 2"     class="composition__photo composition__photo--p2"
+                      
+                    />
+                    <img
+                      src="https://life-stuff.org/wp-content/uploads/2022/02/gambling-poster.jpg"
+                      alt="Photo 3"  class="composition__photo composition__photo--p3"
+                     
+                    />
+                  </div>
+                  
+            </div>
+        </div>
+    </section>
+
+
+ <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sectionAbout = document.getElementById("section-about");
+  const leftArrow = document.getElementById("left-arrow");
+  const rightArrow = document.getElementById("right-arrow");
+
+  // List of background images
+  const backgrounds = [
+    "/static/contest-bg.png",
+    "https://hopetrustindia.com/wp-content/uploads/2024/10/Bet-on-Yourself.jpg",
+    "https://life-stuff.org/wp-content/uploads/2022/02/gambling-poster.jpg",
+    "https://www.gamblingsites.org/app/uploads/2019/09/13-casino-gambling-strategies-1.jpg",
+  ];
+
+  let currentIndex = 0; // Starting index
+
+  // Function to change background image with smooth transition
+  function changeBackground(index) {
+    // Add fade-out class
+    sectionAbout.classList.add("fade-out");
+
+    // Change the background after the fade-out animation
+    setTimeout(() => {
+      sectionAbout.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(${backgrounds[index]})`;
+
+      // Remove fade-out and add fade-in class
+      sectionAbout.classList.remove("fade-out");
+      sectionAbout.classList.add("fade-in");
+    }, 500); // Match the transition duration in CSS
+  }
+
+  // Initialize the first background
+  changeBackground(currentIndex);
+
+  // Left arrow click
+  leftArrow.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + backgrounds.length) % backgrounds.length;
+    changeBackground(currentIndex);
+  });
+
+  // Right arrow click
+  rightArrow.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % backgrounds.length;
+    changeBackground(currentIndex);
+  });
+});
+
+
+	</script>
+
+
+    <div class="background-video-container"data-lazy-load="true">
+        <video class="background-video" autoplay muted loop>
+            <source src="/static/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+
+            <div class="video-overlay-text"data-lazy-load="true">
+                <div class="video-overlay-text-1">
+                <h2 class="main-heading">Risk, reward, uncertainty.</h2>
+                <p class="sub-heading">
+                  Gambling involves wagering money.</p>
+            </div>
+        </div>
+
+    
+    </div>
+
+<section class="section-result" data-lazy-load="true">
+
+	<h2 id="GoaMatka">GOA MATKA</h2>
+
+    {% for result in g_matka_results %}
+	{% if result %}
+	<br>
+	
+	<div class="">
+		<h3 class="t-h2 date">{{result.date}}</h3>
+		
+		<div class="table-container-1"> 
+		  <center>
+			<center>
+				<div>
+				  <table class="tg" cellpadding="2" >
+					<tbody>
+					  <tr class="slot">
+						<td>10:00 AM</td>
+						<td>11:00 AM</td>
+						<td>12:00 PM</td>
+						<td>01:00 PM</td>
+						<td>02:00 PM</td>
+						<td>03:00 PM</td>
+						<td>04:00 PM</td>
+						<td>05:00 PM</td>
+						
+					  </tr>
+					  <tr class="result">
+						<td >
+						  {% if result.slot_1_3 %}
+							  <b>{{result.slot_1_3}}</b>
+							  <br>
+							  <b>{{result.slot_1_1}}</b>
+						  {% else %}
+							  <b>***</b>
+							  <br>
+							  <b>*</b>
+						  {% endif %}
+						</td>
+						<td >
+						  {% if result.slot_2_3 %}
+							  <b>{{result.slot_2_3}}</b>
+							  <br>
+							  <b>{{result.slot_2_1}}</b>
+						  {% else %}
+							  <b>***</b>
+							  <br>
+							  <b>*</b>
+						  {% endif %}
+						</td>
+						<td >
+						  {% if result.slot_3_3 %}
+							  <b>{{result.slot_3_3}}</b>
+							  <br>
+							  <b>{{result.slot_3_1}}</b>
+						  {% else %}
+							  <b>***</b>
+							  <br>
+							  <b>*</b>
+						  {% endif %}
+						</td>
+						<td >
+						  {% if result.slot_4_3 %}
+							  <b>{{result.slot_4_3}}</b>
+							  <br>
+							  <b>{{result.slot_4_1}}</b>
+						  {% else %}
+							  <b>***</b>
+							  <br>
+							  <b>*</b>
+						  {% endif %}
+						</td>
+						<td >
+						  {% if result.slot_5_3 %}
+							  <b>{{result.slot_5_3}}</b>
+							  <br>
+							  <b>{{result.slot_5_1}}</b>
+						  {% else %}
+							  <b>***</b>
+							  <br>
+							  <b>*</b>
+						  {% endif %}
+						</td>
+						<td >
+						  {% if result.slot_6_3 %}
+							  <b>{{result.slot_6_3}}</b>
+							  <br>
+							  <b>{{result.slot_6_1}}</b>
+						  {% else %}
+							  <b>***</b>
+							  <br>
+							  <b>*</b>
+						  {% endif %}
+						</td>
+						<td >
+						  {% if result.slot_7_3 %}
+							  <b>{{result.slot_7_3}}</b>
+							  <br>
+							  <b>{{result.slot_7_1}}</b>
+						  {% else %}
+							  <b>***</b>
+							  <br>
+							  <b>*</b>
+						  {% endif %}
+						</td>
+						<td >
+						  {% if result.slot_8_3 %}
+							  <b>{{result.slot_8_3}}</b>
+							  <br>
+							  <b>{{result.slot_8_1}}</b>
+						  {% else %}
+							  <b>***</b>
+							  <br>
+							  <b>*</b>
+						  {% endif %}
+						</td>
+				
+				
+					  </tr>
+					</tbody>
+				  </table>
+				</div>
+			</center>
+		</div>
+	  </div>
+
+
+	{% endif %}
+	{% endfor %}
+
+
+</section>
+
+<button id="scrollToTopBtn" onclick="scrollToTop()"><span>&#8679;</span> <!-- Unicode arrow --></button>
+
+<script>
+    // Get the button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Show button when user scrolls down 100px
+window.onscroll = function () {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+
+// Scroll to top when button is clicked
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+</script>
+
+<!-- <br> -->
+
+
+	
+	<div id="disclaimer">
+        <p class="disclaimer-disclaimer">DISCLAIMER</p>
+        <p class="disclaimer-p">
+            <b>
+                We adhere to the laws and regulations of the regions where this website is accessed. It is possible that accessing this website may be illegal or banned in your jurisdiction. If you proceed with using our website despite any such ban, you will be solely responsible for any resulting damages, losses, or legal consequences.
+
+If you do not agree with this disclaimer, please exit our website immediately. Copying any information or content from this site is strictly prohibited and may be subject to legal action.
+
+<br><br>
+
+Online gambling involves financial risk, and there is no guarantee of profit. It can be addictive, leading to serious financial and emotional consequences. Always ensure you gamble responsibly and understand the risks involved. Laws and regulations surrounding online gambling vary by jurisdiction, so check local laws before participating. 
+This overview is for informational purposes only and does not endorse or encourage online gambling.
+
+
+
+            </b>
+        </p>
+    </div>
+
+
+
+<div class="contact-index" >
+	<form class="my-form" id="contact">
+        <div class="container-empty">
+          <br><br>
+          <h1 style="color: white;"> Get in touch!</h1>
+          <br>
+          <ul style=" margin-left: 0; padding-left: 0;">
+          
+            <li>
+              <div class="grid grid-2">
+                <input type="text" placeholder="Name" required>  
+                <input type="text" placeholder="Surname" required>
+              </div>
+            </li>
+            <li>
+              <div class="grid grid-2">
+                <input type="email" placeholder="Email" required>  
+                <input type="tel" placeholder="Phone">
+              </div>
+            </li>    
+            <li>
+              <textarea placeholder="Message"></textarea>
+            </li>   
+            <li>
+              <input type="checkbox" id="terms">
+              <label for="terms" > &nbsp;I have read and agreed with <a href="">the terms and conditions.</a></label>
+            </li>  
+            <li>
+              <div class="grid grid-3">
+                <div class="required-msg">REQUIRED FIELDS</div>
+                <button class="btn-grid" type="submit" disabled>
+                  <span class="back">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt="">
+                  </span>
+                  <span class="front">SUBMIT</span>
+                </button>
+                <button class="btn-grid" type="reset" disabled>
+                  <span class="back">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg" alt="">
+                  </span>
+                  <span class="front">RESET</span>
+                </button> 
+              </div>
+            </li>    
+          </ul>
+        </div>
+      </form>
+  <script>
+    const checkbox = document.querySelector('.my-form input[type="checkbox"]');
+const btns = document.querySelectorAll(".my-form button");
+
+checkbox.addEventListener("change", function() {
+  const checked = this.checked;
+  for (const btn of btns) {
+    checked ? (btn.disabled = false) : (btn.disabled = true);
+  }
+});
+  </script>
+</div>
+
+	
+  </body> 
+
+
+
+
+  
+
+
+<!-- </div> -->
+{% endblock body %}
+
+
+
+
+
