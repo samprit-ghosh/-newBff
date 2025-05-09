@@ -1,644 +1,552 @@
-
-{% extends 'layout.html' %} 
-{% block title %} {{title}} {% endblock title %} 
-{% block body %}
-
-
-<body style="background-color: rgb(6, 6, 55);">
-
-
-
-
-  <section class="hero">
-    <div class="hero-content">
- <div class="content-hero-inside">
-        <h1>Unlock limitless earnings! Join our exclusive casino affiliate program today.</h1>
-        <p>Online gambling involves betting or playing games of chance on the internet, including casino games, sports betting, and poker. It offers convenience and accessibility but also carries the risk of addiction and financial loss.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Fatafat | Matka Guru Result</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
         
-        <div class="button-inline">
-        <a href="#Goamatka" class="btn-hero">Explore Now</a>   
-        <a href="#explore" class="btn-hero">💥 Loading 💥</a>
-      </div>
+        body {
+            background-color: #072910;
+            color: #fff;
+            line-height: 1.6;
+            padding: 10px;
+        }
+        
+        .logo-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .logo-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .logo3 {
+            background-color: #faab17;
+            /* padding: 10px; */
+            height: 50px;
+            text-align: center;
+   
 
-      </div>
+        }
+
+
+        .satka{
+          text-align: center;
+         
+       padding-top: 13px;
+        }
+        
+        .logo3 a {
+            color: #000;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        h2, h3 {
+            color: #faab17;
+            text-align: center;
+            margin: 15px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            padding: 0 10px;
+        }
+        
+        .bg4 {
+            background-color: #333;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .matka_result {
+            margin: 15px 0;
+            background-color: #072910;
+        }
+        
+        .matka_result_box {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .matka_title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #faab17;
+            margin-bottom: 10px;
+        }
+        
+        .finak_ank {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        .result_now, .result_now_right {
+            display: inline-block;
+            margin: 5px;
+        }
+        
+        .chart_btn {
+            background-color: #faab17;
+            color: #000;
+            padding: 5px 15px;
+            text-decoration: none;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        table {
+            width: 40%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background-color: #222;
+            color: #fff;
+            justify-self: center;
+
+        }
+        
+        table, th, td {
+            border: 1px solid #444;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #333;
+            color: red;
+        }
+        
+        .satta_result {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .satta_result a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .refresh-btn {
+            display: block;
+            background-color: #faab17;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px auto;
+            width: 150px;
+        }
+        
+        .footer {
+        
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            background-color: #4A043F;
+            margin: 0;
+            bottom: 0;
+        
+        }
+        
+        .vemo, .vemo2 {
+            margin: 10px 0;
+        }
+        
+        .vemo2 a {
+            color: #faab17;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+ 
+        
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .matka_title {
+                font-size: 16px;
+            }
+            
+            .finak_ank {
+                font-size: 20px;
+            }
+            
+            .chart_btn {
+                padding: 3px 10px;
+                font-size: 14px;
+            }
+            
+            table {
+                font-size: 14px;
+                width: 80%;
+            }
+            
+            th, td {
+                padding: 5px;
+            }
+            
+            #example td {
+                padding: 3px;
+                font-size: 12px;
+            }
+            
+            .Rhead {
+                font-size: 12px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .logo3 a {
+                font-size: 14px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+            
+            h3 {
+                font-size: 16px;
+            }
+            
+            table {
+                font-size: 12px;
+            }
+            
+            #example {
+                overflow-x: auto;
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="logo-container">
+        <img src="https://mainfatafat.org/mff/logo2.jpg" alt="Main Fatafat Logo matka guru Result" height="300px" width="20%">
     </div>
-</section>
-
-
-<style>
-  /* General Reset */
-
-
-.button-inline{
-
-  display: flex;
-  justify-content: center;
-  gap:20px;
-
-}
-
-.hero {
-    position: relative;
-    height: fit-content;
-    background: url('/static/about.png') no-repeat center center; /* Background Image */
-    background-size: cover; /* Ensures the image covers the full area */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* padding: 0 20px; */
-}
-
-.hero-content {
-    width: 100%;
-    height: fit-content;
- text-align: center;
-justify-content: center;
-
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text contrast */
-    border-radius: 10px;
-}
-
-.content-hero-inside{
-  margin-bottom: 9rem;
-margin-top: 8rem;
-padding-left: 10px;
-padding-right: 10px;
-
-}
-
-.hero h1 {
-    font-size: 2.2rem;
-    margin-bottom: 3rem;
-    font-weight: bold;
-    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.8), -2px -2px 2px rgba(0, 0, 0, 0.8), 2px -2px 2px rgba(0, 0, 0, 0.8), -2px 2px 2px rgba(0, 0, 0, 0.8);
-    color: #ffffff;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
-    line-height: 2rem;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8), -2px -2px 2px rgba(0, 0, 0, 0.8), 2px -2px 2px rgba(0, 0, 0, 0.8), -2px 2px 2px rgba(0, 0, 0, 0.8);
-}
-
-.btn-hero {
-    text-decoration: none;
-    padding: 16px 30px;
-    background-color: #3a15be;
-    color: #ffffff;
-    font-weight: bold;
-    border-radius: 50px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-hero:hover {
-    background-color: #d3940d;
-    color: #fff;
-  
-    text-decoration: none;
-}
-
-
-</style>
-
-
-    <div class="background-video-container"data-lazy-load="true">
-        <video class="background-video" autoplay muted loop>
-            <source src="/static/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
-
-
-            <div class="video-overlay-text"data-lazy-load="true">
-                <div class="video-overlay-text-1">
-                <h2 class="main-heading">Risk, reward, uncertainty.</h2>
-                <p class="sub-heading">
-                  Gambling involves wagering money.</p>
-            </div>
-        </div>
-
+    <div class="logo3">
+        <p class="satka"><b><a href="https://mainfatafat.org">Main Fatafat Official Website | Matka Guru</a></b></p>
+    </div>
+    <div>
+        <h2 style="color:#faab17">Main Fatafat Get Live Result Here</h2>
+        <h3>Our Main Fatafat Matka Site Always ready to help needy peoples and make them profitable</h3>
+        <p>WORLD'S FIRST 8th Baji Main Fatafat MATKA SITE mainfatafat.org . Get Fast Main Bazar &amp; Main Fatafat Result with live Latest Update We are Providing latest seven days chart &amp; old panel record also Kindly bookmark this official main fatafat website.</p>
+    </div>
     
+    <div class="bg4">
+        <h2>Our Official Game Result</h2>
     </div>
-
-
-<section class="section-result" data-lazy-load="true">
-  
-  <div class="center snipcss-z1olc style-3T5QX" id="style-3T5QX">
-    <button type="button" class="btn btn-success"><b><svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16" style="margin-bottom:3px; color:rgb(255, 255, 255)">
-                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
-            </svg></b><a href="whatsapp://send?text=https://behalaff.in" data-action="share/whatsapp/share" target="_blank" id="style-nvQsD" class="style-nvQsD"> Share </a></button>
-    <button type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16" style="margin-bottom:3px; color:rgb(255, 255, 255)">
-            <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.64.64 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.64.64 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76m5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"></path>
-        </svg>Share</button>
-    <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" style="margin-bottom:3px; color:rgb(255, 255, 255)">
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
-        </svg><a target="https://behalaff.in" href="https://www.facebook.com/sharer/sharer.php?u=your-url-to-share&amp;src=sdk_preparse" class="fb-xfbml-parse-ignore style-BUyeP" id="style-BUyeP">Share</a></button>
-</div>
-
-	<h2 id="GoaMatka">GOA MATKA</h2>
-
-    {% for result in g_matka_results %}
-	{% if result %}
-	<br>
-	
-	<div class="">
-		<h3 class="t-h2 date">{{result.date}}</h3>
-		
-		<div class="table-container-1"> 
-		  <center>
-			<center>
-				<div>
-				  <table class="tg" cellpadding="2" >
-					<tbody>
-					  <tr class="slot">
-						<td>10:00 AM</td>
-						<td>11:00 AM</td>
-						<td>12:00 PM</td>
-						<td>01:00 PM</td>
-						<td>02:00 PM</td>
-						<td>03:00 PM</td>
-						<td>04:00 PM</td>
-						<td>05:00 PM</td>
-						
-					  </tr>
-					  <tr class="result">
-						<td >
-						  {% if result.slot_1_3 %}
-							  <b>{{result.slot_1_3}}</b>
-							  <br>
-							  <b>{{result.slot_1_1}}</b>
-						  {% else %}
-							  <b>***</b>
-							  <br>
-							  <b>*</b>
-						  {% endif %}
-						</td>
-						<td >
-						  {% if result.slot_2_3 %}
-							  <b>{{result.slot_2_3}}</b>
-							  <br>
-							  <b>{{result.slot_2_1}}</b>
-						  {% else %}
-							  <b>***</b>
-							  <br>
-							  <b>*</b>
-						  {% endif %}
-						</td>
-						<td >
-						  {% if result.slot_3_3 %}
-							  <b>{{result.slot_3_3}}</b>
-							  <br>
-							  <b>{{result.slot_3_1}}</b>
-						  {% else %}
-							  <b>***</b>
-							  <br>
-							  <b>*</b>
-						  {% endif %}
-						</td>
-						<td >
-						  {% if result.slot_4_3 %}
-							  <b>{{result.slot_4_3}}</b>
-							  <br>
-							  <b>{{result.slot_4_1}}</b>
-						  {% else %}
-							  <b>***</b>
-							  <br>
-							  <b>*</b>
-						  {% endif %}
-						</td>
-						<td >
-						  {% if result.slot_5_3 %}
-							  <b>{{result.slot_5_3}}</b>
-							  <br>
-							  <b>{{result.slot_5_1}}</b>
-						  {% else %}
-							  <b>***</b>
-							  <br>
-							  <b>*</b>
-						  {% endif %}
-						</td>
-						<td >
-						  {% if result.slot_6_3 %}
-							  <b>{{result.slot_6_3}}</b>
-							  <br>
-							  <b>{{result.slot_6_1}}</b>
-						  {% else %}
-							  <b>***</b>
-							  <br>
-							  <b>*</b>
-						  {% endif %}
-						</td>
-						<td >
-						  {% if result.slot_7_3 %}
-							  <b>{{result.slot_7_3}}</b>
-							  <br>
-							  <b>{{result.slot_7_1}}</b>
-						  {% else %}
-							  <b>***</b>
-							  <br>
-							  <b>*</b>
-						  {% endif %}
-						</td>
-						<td >
-						  {% if result.slot_8_3 %}
-							  <b>{{result.slot_8_3}}</b>
-							  <br>
-							  <b>{{result.slot_8_1}}</b>
-						  {% else %}
-							  <b>***</b>
-							  <br>
-							  <b>*</b>
-						  {% endif %}
-						</td>
-				
-				
-					  </tr>
-					</tbody>
-				  </table>
-				</div>
-			</center>
-		</div>
-	  </div>
-
-
-	{% endif %}
-	{% endfor %}
-
-
-</section>
-
-<div class="container-time-table snipcss-aW52b">
-  <h3 class="center t-h2">Behala FF Result Time Table List </h3>
-  <table class="table">
-      <tbody>
-          <tr class=" in-tr">
-              <td class="in-td">
-                  <b>1st Baji Draw</b>
-              </td>
-              <td class="in-td">
-                  <b>09:55 AM <i class="fas fa-clock"></i></b>
-              </td>
-          </tr>
-          <tr class="in-tr">
-              <td class="in-td">
-                  <b>2nd Baji Draw</b>
-              </td>
-              <td>
-                  <b>11:25 AM <i class="fas fa-clock"></i></b>
-              </td>
-          </tr>
-          <tr class="in-tr">
-              <td class="in-td">
-                  <b>3rd Baji Draw</b>
-              </td>
-              <td class="in-td">
-                  <b>12:55 PM <i class="fas fa-clock"></i></b>
-              </td>
-          </tr>
-          <tr class="in-tr">
-              <td class="in-td">
-                  <b>4th Baji Draw</b>
-              </td>
-              <td>
-                  <b>02:25 PM <i class="fas fa-clock"></i></b>
-              </td>
-          </tr>
-          <tr class="in-tr">
-              <td class="in-td">
-                  <b>5th Baji Draw</b>
-              </td>
-              <td class="in-td">
-                  <b>03:55 PM <i class="fas fa-clock"></i></b>
-              </td>
-          </tr>
-          <tr class="in-tr">
-              <td class="in-td">
-                  <b>6th Baji Draw</b>
-              </td>
-              <td class="in-td">
-                  <b>05:25 PM <i class="fas fa-clock"></i></b>
-              </td>
-          </tr>
-          <tr class="in-tr">
-              <td class="in-td">
-                  <b>7th Baji Draw</b>
-              </td>
-              <td class="in-td">
-                  <b>06:55 PM <i class="fas fa-clock"></i></b>
-              </td>
-          </tr>
-          <tr class="in-tr">
-              <td class="in-td">
-                  <b>8th Baji Draw</b>
-              </td>
-              <td class="in-td">
-                  <b>08:25 PM <i class="fas fa-clock"></i></b>
-              </td>
-          </tr>
-          <tr class="in-tr">
-            <td class="in-td">
-                <b>9th Baji Draw</b>
-            </td>
-            <td class="in-td">
-                <b>08:25 PM <i class="fas fa-clock"></i></b>
-            </td>
-        </tr>
-        <tr class="in-tr">
-          <td class="in-td">
-              <b>10th Baji Draw</b>
-          </td>
-          <td class="in-td">
-              <b>08:25 PM <i class="fas fa-clock"></i></b>
-          </td>
-      </tr>
-      </tbody>
-  </table>
-</div>
-
-
-
-
-
-
-
-
-
-<div class="faq-container">
-  <div class="faq-item">
-    <div class="faq-question">
-      What is CodePen?
-      <span class="arrow-faq">▶</span>
-    </div>
-    <div class="faq-answer">
-      CodePen is an online code editor and learning environment for front-end development.
-    </div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-question">
-      How can I create a Pen?
-      <span class="arrow-faq">▶</span>
-    </div>
-    <div class="faq-answer">
-      You can create a Pen by signing up on CodePen and clicking the "New Pen" button.
-    </div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-question">
-      Is CodePen free to use?
-      <span class="arrow-faq">▶</span>
-    </div>
-    <div class="faq-answer">
-      Yes, CodePen has a free tier with limited features. Pro accounts offer advanced features.
-    </div>
-  </div>
-</div>
-
-<style>
-
-
-    /* body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      padding: 20px;
-    } */
-
-    .faq-container {
-      width: 95%;
-justify-self: center;
-  margin-top: 3rem;
-      background-color: #000000;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid #f7d40f;
-    }
-
-
-    .faq-item:last-child {
-      border-bottom: none;
-    }
-
-    .faq-question {
-      padding: 20px;
-      font-size: 16px;
-      font-weight: 500;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-      background-color: rgb(57, 8, 10);
-      transition: background-color 0.3s ease;
-    }
-
-    .faq-question:hover {
-      background-color: #2867a7;
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      padding: 0 20px;
-      background-color: #ffffff;
-      color: #000000;
-      font-size: 14px;
-      line-height: 1.6;
-      transition: max-height 0.3s ease, padding 0.3s ease;
-    }
-
-    .faq-answer.open {
-      max-height: 200px; /* Adjust for longer answers */
-      padding: 15px 20px;
-    }
-
-    .arrow-faq {
-      font-size: 18px;
-      transition: transform 0.3s ease;
-      color: #ff0000;
-    }
-
-    .arrow-faq.open {
-      transform: rotate(90deg);
-      color: #32aa14;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .faq-question {
-        font-size: 14px;
-        padding: 15px;
-      }
-
-      .faq-answer {
-        font-size: 13px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .faq-container {
-        max-width: 90%;
-      }
-    }
-</style>
-
-
-<script>
-      const faqItems = document.querySelectorAll('.faq-item');
-
-faqItems.forEach(item => {
-  const question = item.querySelector('.faq-question');
-  const answer = item.querySelector('.faq-answer');
-  const arrow = item.querySelector('.arrow-faq');
-
-  question.addEventListener('click', () => {
-    const isOpen = answer.classList.contains('open');
-
-    // Close all open answers
-    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
-    document.querySelectorAll('.arrow-faq').forEach(a => a.classList.remove('open'));
-
-    // Toggle current item
-    if (!isOpen) {
-      answer.classList.add('open');
-      arrow.classList.add('open');
-    }
-  });
-});
-</script>
-
-
-<button id="scrollToTopBtn" onclick="scrollToTop()"><span>&#8679;</span> <!-- Unicode arrow --></button>
-
-<script>
-    // Get the button
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-// Show button when user scrolls down 100px
-window.onscroll = function () {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    scrollToTopBtn.style.display = "block";
-  } else {
-    scrollToTopBtn.style.display = "none";
-  }
-};
-
-// Scroll to top when button is clicked
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
-
-</script>
-
-<!-- <br> -->
-
-
-	
-	<div id="disclaimer">
-        <p class="disclaimer-disclaimer">DISCLAIMER</p>
-        <p class="disclaimer-p">
-            <b>
-                We adhere to the laws and regulations of the regions where this website is accessed. It is possible that accessing this website may be illegal or banned in your jurisdiction. If you proceed with using our website despite any such ban, you will be solely responsible for any resulting damages, losses, or legal consequences.
-
-If you do not agree with this disclaimer, please exit our website immediately. Copying any information or content from this site is strictly prohibited and may be subject to legal action.
-
-<br><br>
-
-Online gambling involves financial risk, and there is no guarantee of profit. It can be addictive, leading to serious financial and emotional consequences. Always ensure you gamble responsibly and understand the risks involved. Laws and regulations surrounding online gambling vary by jurisdiction, so check local laws before participating. 
-This overview is for informational purposes only and does not endorse or encourage online gambling.
-
-
-
-            </b>
-        </p>
-    </div>
-
-
-
-<div class="contact-index" >
-	<form class="my-form" id="contact">
-        <div class="container-empty">
-          <br><br>
-          <h1 style="color: white;"> Get in touch!</h1>
-          <br>
-          <ul style=" margin-left: 0; padding-left: 0;">
-          
-            <li>
-              <div class="grid grid-2">
-                <input type="text" placeholder="Name" required>  
-                <input type="text" placeholder="Surname" required>
-              </div>
-            </li>
-            <li>
-              <div class="grid grid-2">
-                <input type="email" placeholder="Email" required>  
-                <input type="tel" placeholder="Phone">
-              </div>
-            </li>    
-            <li>
-              <textarea placeholder="Message"></textarea>
-            </li>   
-            <li>
-              <input type="checkbox" id="terms">
-              <label for="terms" > &nbsp;I have read and agreed with <a href="">the terms and conditions.</a></label>
-            </li>  
-            <li>
-              <div class="grid grid-3">
-                <div class="required-msg">REQUIRED FIELDS</div>
-                <button class="btn-grid" type="submit" disabled>
-                  <span class="back">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt="">
-                  </span>
-                  <span class="front">SUBMIT</span>
-                </button>
-                <button class="btn-grid" type="reset" disabled>
-                  <span class="back">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg" alt="">
-                  </span>
-                  <span class="front">RESET</span>
-                </button> 
-              </div>
-            </li>    
-          </ul>
+    
+    <div class="matka_result">
+        <div class="matka_result_box">
+            <p class="matka_title">MAIN BAZAR</p>
+            <p class="finak_ank">160-75-889</p>
+            <div class="result_now"><a href="#" class="chart_btn">Jodi</a></div>
+            <div class="result_now_right"><a href="#" class="chart_btn">Panel</a></div>
+            <small>10:00 PM - 12:10AM</small>
         </div>
-      </form>
-  <script>
-    const checkbox = document.querySelector('.my-form input[type="checkbox"]');
-const btns = document.querySelectorAll(".my-form button");
+    </div>
+    
+    <hr>
+    
+    <div class="bg4" >
+        <h2>Dear Matka Result</h2>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th><center>Game Round's</center></th>
+                <th><center>TIME</center></th>
+                <th><center>RESULT</center></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1st Baji</td>
+                <td>01:00 PM</td>
+                <td>***-*</td>
+            </tr>
+            <tr>
+                <td>2nd Baji</td>
+                <td>06:00 PM</td>
+                <td>***-*</td>
+            </tr>
+            <tr>
+                <td>3rd Baji</td>
+                <td>08:00 PM</td>
+                <td>***-*</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="satta_result bg3"><a href="dear-matka-panel-chart.php" title="Dear Matka Panel Chart">Dear Matka Panel Chart</a></div>
+    
+    <br>
+    
+    <center>
+        <a href="https://whatsapp.com/channel/0029Va5YQv4GZNCoFDbNbB2N">
+            <img src="https://mainfatafat.org/images/wt.jpg" alt="whatsapp matka" style="max-width: 160px; height: auto;">
+        </a>
+    </center>
+    
+    <hr>
+    
+    <table>
+        <thead>
+            <tr>
+                <th><center>Game Round's</center></th>
+                <th><center>TIME</center></th>
+                <th><center>RESULT</center></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1st Baji</td>
+                <td>11:00 AM</td>
+                <td>467-7</td>
+            </tr>
+            <tr>
+                <td>2nd Baji</td>
+                <td>12:30 PM</td>
+                <td>590-4</td>
+            </tr>
+            <tr>
+                <td>3rd Baji</td>
+                <td>02:00 PM</td>
+                <td>670-3</td>
+            </tr>
+            <tr>
+                <td>4th Baji</td>
+                <td>03:30 PM</td>
+                <td>***-*</td>
+            </tr>
+            <tr>
+                <td>5th Baji</td>
+                <td>05:00 PM</td>
+                <td>***-*</td>
+            </tr>
+            <tr>
+                <td>6th Baji</td>
+                <td>06:30 PM</td>
+                <td>***-*</td>
+            </tr>
+            <tr>
+                <td>7th Baji</td>
+                <td>08:00 PM</td>
+                <td>***-*</td>
+            </tr>
+            <tr>
+                <td>8th Baji</td>
+                <td>09:30 PM</td>
+                <td>***-*</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="satta_result bg3"><a href="main-fatafat-panel-chart.php" title="Panel Chart">Full Panel Record<br>Click Here</a></div>
+    
+    <br>
+    
+    <div class="bg4">
+        <h2>Latest Last Seven Day Record Chart</h2>
+    </div>
+    
+    <div style="overflow-x: auto;">
+        <table border="1" bgcolor="white" style="width: 100%;">
+            <tbody>
+                <tr style="padding: 0">
+                    <td colspan="13" style="padding:0">
+                        <div style="text-align: center; padding: 5px;">
+                            <font size="5" color="#181ff2">LAST SEVEN DAYS LIVE RECORD</font>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="background-color:rgba(242,247,37, 0.4)">
+                    <td><p align="center" class="Rhead">DATE</p></td>
+                    <td valign="middle" align="center" class="Rhead">11:00AM</td>
+                    <td valign="middle" align="center" class="Rhead">12:30PM</td>
+                    <td valign="middle" align="center" class="Rhead">02:00PM</td>
+                    <td valign="middle" align="center" class="Rhead">03:30PM</td>
+                    <td valign="middle" align="center" class="Rhead">05:00PM</td>
+                    <td valign="middle" align="center" class="Rhead">06:30PM</td>
+                    <td valign="middle" align="center" class="Rhead">08:00PM</td>
+                    <td valign="middle" align="center" class="Rhead">09:30PM</td>
+                </tr>
+                <tr>
+                    <td><span>01-05-2025<br>Thursday</span></td>
+                    <td><span>267<br>5</span></td>
+                    <td><span>127<br>0</span></td>
+                    <td><span>239<br>4</span></td>
+                    <td><span>350<br>8</span></td>
+                    <td><span>789<br>4</span></td>
+                    <td><span>369<br>8</span></td>
+                    <td><span>358<br>6</span></td>
+                    <td><span>567<br>8</span></td>
+                </tr>
+                <tr>
+                    <td><span>02-05-2025<br>Friday</span></td>
+                    <td><span>259<br>6</span></td>
+                    <td><span>138<br>2</span></td>
+                    <td><span>389<br>0</span></td>
+                    <td><span>380<br>1</span></td>
+                    <td><span>680<br>4</span></td>
+                    <td><span>347<br>4</span></td>
+                    <td><span>660<br>2</span></td>
+                    <td><span>124<br>7</span></td>
+                </tr>
+                <tr>
+                    <td><span>03-05-2025<br>Saturday</span></td>
+                    <td><span>489<br>1</span></td>
+                    <td><span>179<br>7</span></td>
+                    <td><span>145<br>0</span></td>
+                    <td><span>289<br>9</span></td>
+                    <td><span>699<br>4</span></td>
+                    <td><span>256<br>3</span></td>
+                    <td><span>350<br>8</span></td>
+                    <td><span>570<br>2</span></td>
+                </tr>
+                <tr>
+                    <td><span>04-05-2025<br>Sunday</span></td>
+                    <td><span>145<br>0</span></td>
+                    <td><span>123<br>6</span></td>
+                    <td><span>368<br>7</span></td>
+                    <td><span>159<br>5</span></td>
+                    <td><span>***<br>*</span></td>
+                    <td><span>***<br>*</span></td>
+                    <td><span>***<br>*</span></td>
+                    <td><span>***<br>*</span></td>
+                </tr>
+                <tr>
+                    <td><span>05-05-2025<br>Monday</span></td>
+                    <td><span>259<br>6</span></td>
+                    <td><span>126<br>9</span></td>
+                    <td><span>249<br>5</span></td>
+                    <td><span>237<br>2</span></td>
+                    <td><span>360<br>9</span></td>
+                    <td><span>245<br>1</span></td>
+                    <td><span>459<br>8</span></td>
+                    <td><span>440<br>8</span></td>
+                </tr>
+                <tr>
+                    <td><span>06-05-2025<br>Tuesday</span></td>
+                    <td><span>560<br>1</span></td>
+                    <td><span>134<br>8</span></td>
+                    <td><span>346<br>3</span></td>
+                    <td><span>137<br>1</span></td>
+                    <td><span>390<br>2</span></td>
+                    <td><span>260<br>8</span></td>
+                    <td><span>227<br>1</span></td>
+                    <td><span>269<br>7</span></td>
+                </tr>
+                <tr>
+                    <td><span>07-05-2025<br>Wednesday</span></td>
+                    <td><span>467<br>7</span></td>
+                    <td><span>590<br>4</span></td>
+                    <td><span>670<br>3</span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="bg4">
+        <h2>Main FataFat Time Table</h2>
+    </div>
+    
+    <table class="center">
+        <tbody>
+            <tr>
+                <th>Game Round</th>
+                <th>Game Time</th>
+                <th>Result Time</th>
+            </tr>
+            <tr>
+                <td>1st Baji</td>
+                <td>10.30am</td>
+                <td>11.00am</td>
+            </tr>
+            <tr>
+                <td>2nd Baji</td>
+                <td>12.00am</td>
+                <td>12.30pm</td>
+            </tr>
+            <tr>
+                <td>3rd Baji</td>
+                <td>01.30pm</td>
+                <td>02.00pm</td>
+            </tr>
+            <tr>
+                <td>4th Baji</td>
+                <td>02.30pm</td>
+                <td>03.30pm</td>
+            </tr>
+            <tr>
+                <td>5th Baji</td>
+                <td>04.30pm</td>
+                <td>05.00pm</td>
+            </tr>
+            <tr>
+                <td>6th Baji</td>
+                <td>06.00pm</td>
+                <td>06.30pm</td>
+            </tr>
+            <tr>
+                <td>7th Baji</td>
+                <td>07.30pm</td>
+                <td>08.00pm</td>
+            </tr>
+            <tr>
+                <td>8th Baji</td>
+                <td>09.00pm</td>
+                <td>09.30pm</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <hr>
+    
+    <h2 style="color:pink">About Main Fatafat</h2>
+    <p>Welcome to Main Fatafat Satta Matka, the ultimate destination for all your satta matka needs! We are thrilled to bring you an exhilarating experience filled with excitement and endless possibilities. <br> At Main Fatafat Satta Matka, we understand the thrill that comes with playing this popular game. With our user-friendly platform, we aim to provide you with a seamless and electrifying gaming experience like never before. Get ready to dive into the world of satta matka and witness the adrenaline rush firsthand. <br> Our team consists of passionate individuals who have a deep understanding of the satta matka industry. We are constantly striving to bring you the most accurate and up-to-date results, ensuring that you stay ahead in the game. With our cutting-edge technology and expert analysis, you can trust us to provide you with reliable information and guidance. <br> Whether you are a seasoned player or new to the world of satta matka, we have something for everyone. Our website offers a wide range of games, markets, and betting options to cater to your preferences. From traditional matka to modern variations, we have it all under one roof. <br> What sets us apart is our commitment to transparency and fairness. We believe in maintaining a level playing field for all our users, ensuring that every game is conducted with utmost integrity. Rest assured, your safety and security are our top priorities, and we leave no stone unturned to provide you with a secure gaming environment. <br> Join us on this thrilling journey and unlock the door to immense excitement and unlimited opportunities. Get ready to experience the rush, the joy, and the ecstasy that only Main Fatafat Satta Matka can deliver. Let the games begin!</p>
+    
+    <hr>
+    
+    <a href="index.php" class="refresh-btn">Refresh</a>
+    
 
-checkbox.addEventListener("change", function() {
-  const checked = this.checked;
-  for (const btn of btns) {
-    checked ? (btn.disabled = false) : (btn.disabled = true);
-  }
-});
-  </script>
-</div>
-
-	
-  </body> 
-
-
-
-
-  
-
-
-<!-- </div> -->
-{% endblock body %}
-
-
-
-
-
+</body>
+<footer class="footer">
+  <div class="vemo2"><a href="https://mainfatafat.org/">mainfatafat.org</a></div>
+  ALL RIGHTS RESERVED (2023-2025)<br>
+  SITE MANAGER:-<br>
+  <u>Admin Sir</u><br>
+  <div class="vemo">7024923729</div>
+  <p><b>https://mainfatafat.org<img src="data:image/png;base64,R0lGODlhBwAHAPsAMQAAAP8zM/9mZv8AAN0AAMwAACIAAHcAAFUAAO4AAIgAAP+ZmQAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJIwAAACwAAAAABwAHAAAEHRCAEYYEQYhAplgbcWTaUCBJoCaKARRE0V4H4gKRACH5BAUjAAAALAAAAAABAAEAAAICRIEAOw==" alt="Satta Matka /" width="10" height="10"></b></p>
+</footer>
+</html>

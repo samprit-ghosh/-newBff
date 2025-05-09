@@ -51,7 +51,7 @@ button {
     -webkit-appearance: button;
 } 
 
-.btn { 
+.btn-s { 
     display: inline-block; 
     margin-bottom: 3rem;
     font-weight: 400; 
@@ -77,15 +77,16 @@ button {
     border-color: #28a745;
 } 
 
+
 [type="button"]:not(:disabled),button:not(:disabled) { 
     cursor: pointer;
 } 
 
-.btn:not(:disabled):not(.disabled) { 
+.btn-s:not(:disabled):not(.disabled) { 
     cursor: pointer;
 } 
 
-.btn:hover { 
+.btn-s:hover { 
     color: #212529; 
     text-decoration: none;
 } 
